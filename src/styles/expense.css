@@ -1,14 +1,15 @@
 .expense-page {
   max-width: 900px;
-  margin: 12px auto;
+  margin: 12px 12px 12px 292px;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
   .expense-page {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 20px 20px 20px 292px;
   }
 }
 
