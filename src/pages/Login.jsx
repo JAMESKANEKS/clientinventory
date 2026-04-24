@@ -26,7 +26,8 @@ const Login = () => {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="" />
+        <h1 style={{textAlign: "center", marginBottom: "25px"}}>Inventory</h1>
         {error && <div className="error">{error}</div>}
         <label>Username</label>
         <input
