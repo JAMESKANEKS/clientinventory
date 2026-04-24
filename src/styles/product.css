@@ -1,11 +1,157 @@
 /* Product Container */
 .product-container {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 0 0 280px;
   padding: 24px;
   background: #f5f7fa;
   min-height: calc(100vh - 80px);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .product-container {
+    padding: 20px;
+  }
+  
+  .product-header h2 {
+    font-size: 26px;
+  }
+  
+  .product-form-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    padding: 16px;
+    margin: 0;
+  }
+  
+  .product-header {
+    margin-bottom: 24px;
+  }
+  
+  .product-header h2 {
+    font-size: 22px;
+  }
+  
+  .product-header p {
+    font-size: 13px;
+  }
+  
+  .product-form-section {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .product-form-section h3 {
+    font-size: 15px;
+  }
+  
+  .product-form {
+    gap: 14px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-row > div {
+    width: 100%;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+  
+  .search-section {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .search-bar input {
+    max-width: 100%;
+  }
+  
+  .product-table-container {
+    overflow-x: auto;
+  }
+  
+  .product-table {
+    min-width: 600px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .action-buttons button {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-container {
+    padding: 12px;
+  }
+  
+  .product-header h2 {
+    font-size: 20px;
+  }
+  
+  .product-form-section {
+    padding: 12px;
+  }
+  
+  .product-form-section h3 {
+    font-size: 14px;
+  }
+  
+  .product-form {
+    gap: 12px;
+  }
+  
+  .form-group label {
+    font-size: 13px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+  
+  .action-buttons button {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
 }
 
 /* Header */

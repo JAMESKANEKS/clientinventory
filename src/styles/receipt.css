@@ -1,11 +1,144 @@
 /* Receipt Container */
 .receipt-container {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 0 0 280px;
   padding: 24px;
   background: #f5f7fa;
   min-height: calc(100vh - 80px);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .receipt-container {
+    padding: 20px;
+  }
+  
+  .receipt-header h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .receipt-container {
+    padding: 16px;
+    margin: 0;
+  }
+  
+  .receipt-header {
+    margin-bottom: 24px;
+  }
+  
+  .receipt-header h2 {
+    font-size: 22px;
+  }
+  
+  .receipt-header p {
+    font-size: 13px;
+  }
+  
+  .receipt-table-container {
+    overflow-x: auto;
+  }
+  
+  .receipt-table {
+    min-width: 600px;
+  }
+  
+  .receipt-table th,
+  .receipt-table td {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+  
+  .receipt-table th {
+    font-size: 11px;
+  }
+  
+  .receipt-id {
+    font-size: 12px;
+  }
+  
+  .receipt-date {
+    font-size: 11px;
+  }
+  
+  .receipt-customer {
+    font-size: 13px;
+  }
+  
+  .receipt-items {
+    font-size: 13px;
+  }
+  
+  .receipt-total {
+    font-size: 13px;
+  }
+  
+  .receipt-amount {
+    font-size: 15px;
+  }
+  
+  .receipt-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .receipt-actions button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .receipt-container {
+    padding: 12px;
+  }
+  
+  .receipt-header h2 {
+    font-size: 20px;
+  }
+  
+  .receipt-table th,
+  .receipt-table td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+  
+  .receipt-table th {
+    font-size: 10px;
+  }
+  
+  .receipt-id {
+    font-size: 11px;
+  }
+  
+  .receipt-date {
+    font-size: 10px;
+  }
+  
+  .receipt-customer {
+    font-size: 12px;
+  }
+  
+  .receipt-items {
+    font-size: 12px;
+  }
+  
+  .receipt-total {
+    font-size: 12px;
+  }
+  
+  .receipt-amount {
+    font-size: 14px;
+  }
+  
+  .receipt-actions button {
+    padding: 8px;
+    font-size: 13px;
+  }
 }
 
 /* Header */
