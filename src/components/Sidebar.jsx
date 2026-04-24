@@ -66,8 +66,8 @@ const Sidebar = () => {
             className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <span className="nav-icon">🎨</span>
-            <span className="nav-label">Paint / Products</span>
+            <span className="nav-icon">📦</span>
+            <span className="nav-label">Paint & More / Products</span>
           </NavLink>
 
           <NavLink 
@@ -75,8 +75,8 @@ const Sidebar = () => {
             className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <span className="nav-icon">🛠️</span>
-            <span className="nav-label">Tools / Hardware</span>
+            <span className="nav-icon">📦</span>
+            <span className="nav-label">Tools & More / Products</span>
           </NavLink>
 
           <NavLink 
